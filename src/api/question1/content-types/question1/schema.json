@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions2",
+  "info": {
+    "singularName": "question1",
+    "pluralName": "questions2",
+    "displayName": "Question"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "multipleChoice",
+        "textAnswer"
+      ]
+    },
+    "options": {
+      "type": "json"
+    },
+    "correctAnswer": {
+      "type": "string"
+    }
+  }
+}

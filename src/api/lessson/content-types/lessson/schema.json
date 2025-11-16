@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lesssons",
+  "info": {
+    "singularName": "lessson",
+    "pluralName": "lesssons",
+    "displayName": "Lessson"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "videoUrl": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "questionsses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::question1.question1"
+    },
+    "summaryPdf": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    }
+  }
+}
